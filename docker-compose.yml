@@ -1,0 +1,12 @@
+# Copyright VMware, Inc.
+# SPDX-License-Identifier: APACHE-2.0
+
+version: '2'
+
+services:
+  musechi-mantenedor-personas-frontend:
+    image: docker.io/bitnami/laravel:8
+    ports:
+      - '8360:8000'
+    volumes:
+      - './:/app'
